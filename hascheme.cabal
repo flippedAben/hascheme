@@ -20,11 +20,14 @@ library
     Parse
   -- other-modules:       
   -- other-extensions:    
+  extensions:
+    OverloadedStrings
   hs-source-dirs: src
   default-language: Haskell2010
   build-depends:
     base >=4.8 && <4.9,
-    parsec
+    parsec,
+    text >= 1.2.2.2
 
 executable exe
   main-is: Main.hs
@@ -33,7 +36,8 @@ executable exe
   build-depends:
     base >=4.8 && <4.9,
     hascheme >= 0.1,
-    parsec
+    parsec,
+    text >= 1.2.2.2
 
 test-suite test
   main-is: Test.hs

@@ -1,9 +1,8 @@
 module Parse where
 
-{-# LANGUAGE OverloadedStrings #-}
-
-import Text.ParserCombinators.Parsec
 import System.Environment
+import Text.ParserCombinators.Parsec
+import qualified Data.Text as T
 
 symbol :: Parser Char
 symbol = oneOf "!#$%&|*+-/:<=>?@^_~"
