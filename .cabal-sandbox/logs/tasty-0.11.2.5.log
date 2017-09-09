@@ -1,0 +1,70 @@
+Configuring tasty-0.11.2.5...
+Building tasty-0.11.2.5...
+Preprocessing library tasty-0.11.2.5...
+
+Test/Tasty/Options.hs:3:14: Warning:
+    -XOverlappingInstances is deprecated: instead use per-instance pragmas OVERLAPPING/OVERLAPPABLE/OVERLAPS
+[ 1 of 18] Compiling Test.Tasty.Parallel ( Test/Tasty/Parallel.hs, dist/dist-sandbox-ad9d9d55/build/Test/Tasty/Parallel.o )
+[ 2 of 18] Compiling Test.Tasty.Runners.Utils ( Test/Tasty/Runners/Utils.hs, dist/dist-sandbox-ad9d9d55/build/Test/Tasty/Runners/Utils.o )
+[ 3 of 18] Compiling Test.Tasty.Runners.Reducers ( Test/Tasty/Runners/Reducers.hs, dist/dist-sandbox-ad9d9d55/build/Test/Tasty/Runners/Reducers.o )
+[ 4 of 18] Compiling Test.Tasty.Options ( Test/Tasty/Options.hs, dist/dist-sandbox-ad9d9d55/build/Test/Tasty/Options.o )
+[ 5 of 18] Compiling Test.Tasty.Patterns ( Test/Tasty/Patterns.hs, dist/dist-sandbox-ad9d9d55/build/Test/Tasty/Patterns.o )
+
+Test/Tasty/Patterns.hs:47:1: Warning:
+    The import of ‘Data.Tagged’ is redundant
+      except perhaps to import instances from ‘Data.Tagged’
+    To import instances alone, use: import Data.Tagged()
+
+Test/Tasty/Patterns.hs:50:1: Warning:
+    The import of ‘Data.Monoid’ is redundant
+      except perhaps to import instances from ‘Data.Monoid’
+    To import instances alone, use: import Data.Monoid()
+[ 6 of 18] Compiling Test.Tasty.Options.Core ( Test/Tasty/Options/Core.hs, dist/dist-sandbox-ad9d9d55/build/Test/Tasty/Options/Core.o )
+
+Test/Tasty/Options/Core.hs:15:1: Warning:
+    The import of ‘Data.Tagged’ is redundant
+      except perhaps to import instances from ‘Data.Tagged’
+    To import instances alone, use: import Data.Tagged()
+
+Test/Tasty/Options/Core.hs:17:1: Warning:
+    The import of ‘Data.Monoid’ is redundant
+      except perhaps to import instances from ‘Data.Monoid’
+    To import instances alone, use: import Data.Monoid()
+[ 7 of 18] Compiling Test.Tasty.Core  ( Test/Tasty/Core.hs, dist/dist-sandbox-ad9d9d55/build/Test/Tasty/Core.o )
+[ 8 of 18] Compiling Test.Tasty.Providers ( Test/Tasty/Providers.hs, dist/dist-sandbox-ad9d9d55/build/Test/Tasty/Providers.o )
+[ 9 of 18] Compiling Test.Tasty.Run   ( Test/Tasty/Run.hs, dist/dist-sandbox-ad9d9d55/build/Test/Tasty/Run.o )
+
+Test/Tasty/Run.hs:307:25: Warning:
+    In the use of ‘Clock.timeSpecAsNanoSecs’
+    (imported from System.Clock):
+    Deprecated: "Use toNanoSecs instead! Replaced timeSpecAsNanoSecs with the same signature TimeSpec -> Integer"
+[10 of 18] Compiling Test.Tasty.Ingredients ( Test/Tasty/Ingredients.hs, dist/dist-sandbox-ad9d9d55/build/Test/Tasty/Ingredients.o )
+[11 of 18] Compiling Test.Tasty.Ingredients.IncludingOptions ( Test/Tasty/Ingredients/IncludingOptions.hs, dist/dist-sandbox-ad9d9d55/build/Test/Tasty/Ingredients/IncludingOptions.o )
+[12 of 18] Compiling Test.Tasty.Ingredients.ConsoleReporter ( Test/Tasty/Ingredients/ConsoleReporter.hs, dist/dist-sandbox-ad9d9d55/build/Test/Tasty/Ingredients/ConsoleReporter.o )
+
+Test/Tasty/Ingredients/ConsoleReporter.hs:28:1: Warning:
+    The import of ‘Data.Tagged’ is redundant
+      except perhaps to import instances from ‘Data.Tagged’
+    To import instances alone, use: import Data.Tagged()
+[13 of 18] Compiling Test.Tasty.Ingredients.ListTests ( Test/Tasty/Ingredients/ListTests.hs, dist/dist-sandbox-ad9d9d55/build/Test/Tasty/Ingredients/ListTests.o )
+
+Test/Tasty/Ingredients/ListTests.hs:11:1: Warning:
+    The import of ‘Data.Monoid’ is redundant
+      except perhaps to import instances from ‘Data.Monoid’
+    To import instances alone, use: import Data.Monoid()
+[14 of 18] Compiling Test.Tasty.Ingredients.Basic ( Test/Tasty/Ingredients/Basic.hs, dist/dist-sandbox-ad9d9d55/build/Test/Tasty/Ingredients/Basic.o )
+[15 of 18] Compiling Test.Tasty.Options.Env ( Test/Tasty/Options/Env.hs, dist/dist-sandbox-ad9d9d55/build/Test/Tasty/Options/Env.o )
+[16 of 18] Compiling Test.Tasty.CmdLine ( Test/Tasty/CmdLine.hs, dist/dist-sandbox-ad9d9d55/build/Test/Tasty/CmdLine.o )
+
+Test/Tasty/CmdLine.hs:13:1: Warning:
+    The import of ‘Data.Foldable’ is redundant
+      except perhaps to import instances from ‘Data.Foldable’
+    To import instances alone, use: import Data.Foldable()
+[17 of 18] Compiling Test.Tasty.Runners ( Test/Tasty/Runners.hs, dist/dist-sandbox-ad9d9d55/build/Test/Tasty/Runners.o )
+[18 of 18] Compiling Test.Tasty       ( Test/Tasty.hs, dist/dist-sandbox-ad9d9d55/build/Test/Tasty.o )
+In-place registering tasty-0.11.2.5...
+Creating package registration file:
+/tmp/pkgConf-tasty-0.11.21376710097927612902.5
+Installing library in
+/home/ben/projects/haskell/hascheme/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.3/tasty-0.11.2.5-1kjb2n3ixKBI69jImG9BGO
+Registering tasty-0.11.2.5...

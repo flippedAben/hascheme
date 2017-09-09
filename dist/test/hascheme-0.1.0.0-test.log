@@ -1,0 +1,7 @@
+Test suite test: RUNNING...
+Unit Tests
+  Unity: OK
+
+All 1 tests passed (0.00s)
+Test suite test: PASS
+Test suite logged to: dist/test/hascheme-0.1.0.0-test.log
