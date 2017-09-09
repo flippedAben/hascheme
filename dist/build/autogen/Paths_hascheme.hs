@@ -13,12 +13,12 @@ catchIO :: IO a -> (Exception.IOException -> IO a) -> IO a
 catchIO = Exception.catch
 
 version :: Version
-version = Version [0,1,0,0] []
+version = Version [0,1] []
 bindir, libdir, datadir, libexecdir, sysconfdir :: FilePath
 
 bindir     = "/home/ben/projects/haskell/hascheme/.cabal-sandbox/bin"
-libdir     = "/home/ben/projects/haskell/hascheme/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.3/hascheme-0.1.0.0-6NUCOWUNQbc7rdMsUpjSva"
-datadir    = "/home/ben/projects/haskell/hascheme/.cabal-sandbox/share/x86_64-linux-ghc-7.10.3/hascheme-0.1.0.0"
+libdir     = "/home/ben/projects/haskell/hascheme/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.3/hascheme-0.1-GQYPN1FnBPh7UQWZPcHOj2"
+datadir    = "/home/ben/projects/haskell/hascheme/.cabal-sandbox/share/x86_64-linux-ghc-7.10.3/hascheme-0.1"
 libexecdir = "/home/ben/projects/haskell/hascheme/.cabal-sandbox/libexec"
 sysconfdir = "/home/ben/projects/haskell/hascheme/.cabal-sandbox/etc"
 

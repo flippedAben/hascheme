@@ -1,0 +1,10 @@
+Test suite test: RUNNING...
+Unit Tests
+  Irrelevent
+    Unity: OK
+  Parse
+    1:     OK
+
+All 2 tests passed (0.00s)
+Test suite test: PASS
+Test suite logged to: dist/test/hascheme-0.1-test.log

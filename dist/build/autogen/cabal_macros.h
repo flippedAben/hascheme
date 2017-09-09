@@ -91,5 +91,5 @@
   (major1) == 2 && (major2) <  26 || \
   (major1) == 2 && (major2) == 26 && (minor) <= 0)
 
-#define CURRENT_PACKAGE_KEY "hasch_6NUCOWUNQbc7rdMsUpjSva"
+#define CURRENT_PACKAGE_KEY "hasch_GQYPN1FnBPh7UQWZPcHOj2"
 
