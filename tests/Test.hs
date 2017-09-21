@@ -16,7 +16,8 @@ testSuite =
     ],
     testGroup "Parse"
     [
-      testCase "1" $ isSymbol "!"
+      testCase "! Found" $ isSymbol "!",
+      testCase "$ Found" $ isSymbol "$"
     ]
   ]
 
