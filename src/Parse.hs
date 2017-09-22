@@ -3,23 +3,16 @@ module Parse where
 import System.Environment
 import Text.ParserCombinators.Parsec
 import qualified Data.Text as T
-import Control.Monad (when)
-
-data LispVal
-  = Identifier String
-  | List [LispVal]
-  | Number Integer
-  | String String
-  | Bool Bool
-
-extAlphaChar :: Parser Char
-extAlphaChar = oneOf "!#$%&|*+-/:<=>?@^_~"
+import Evaluate
 
 readExpr :: String -> String
 readExpr input =
   case parse parseExpr "scheme" input of
     Left err  -> "No match: " ++ show err
-    Right val -> "Found value"
+    Right val -> "Found: " ++ show val
+
+extAlphaChar :: Parser Char
+extAlphaChar = oneOf "!#$%&|*+-/:<=>?@^_~"
 
 spaces1 :: Parser ()
 spaces1 = skipMany1 space
@@ -35,7 +28,7 @@ parseId  = do
       "#f" -> Bool False
       -- "#\\":char -> Character
       -- "#(":vector -> Vector
-      -- "#{eibodx}":vector -> Vector
+      -- "#{eibodx}":base -> Number
       _   -> Identifier id
 
 parseString :: Parser LispVal
