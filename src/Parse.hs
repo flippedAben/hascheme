@@ -38,6 +38,10 @@ parseString = do
   char '"'
   return $ String x
 
+parseNumber :: Parser LispVal
+parseNumber = (Number. read) <$> many1 digit
+
 parseExpr :: Parser LispVal
 parseExpr =  parseId
          <|> parseString
+         <|> parseNumber
